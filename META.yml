@@ -1,0 +1,40 @@
+---
+abstract: 'Additional verbs for Catalyst::Controller::Resources'
+author:
+  - 'Chris Weyl <cweyl@alumni.drew.edu>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 0.91'
+license: lgpl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Catalyst-ControllerRole-Resources-Verbs
+no_index:
+  directory:
+    - inc
+    - t
+    - xt
+provides:
+  Catalyst::ControllerRole::Resources::Verb:
+    file: lib/Catalyst/ControllerRole/Resources/Verb.pm
+    version: 0.001_01
+  Catalyst::ControllerRole::Resources::Verb::Count:
+    file: lib/Catalyst/ControllerRole/Resources/Verb/Count.pm
+    version: 0.001_01
+  Catalyst::ControllerRole::Resources::Verbs:
+    file: lib/Catalyst/ControllerRole/Resources/Verbs.pm
+    version: 0.001_01
+requires:
+  Catalyst::Controller::Resources: 0.08
+  MooseX::Role::Parameterized: 0.18
+  namespace::autoclean: 0.09
+resources:
+  homepage: http://github.com/RsrchBoy/catalyst-controllerrole-resources-verbs/tree
+  license: http://opensource.org/licenses/lgpl-license.php
+  repository: git://github.com/RsrchBoy/catalyst-controllerrole-resources-verbs.git
+version: 0.001_01

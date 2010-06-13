@@ -1,0 +1,71 @@
+# NAME
+
+Catalyst::ControllerRole::Resources::Verbs - Additional verbs for Catalyst::Controller::Resources
+
+# DESCRIPTION
+
+[Catalyst::Controller::Resources](http://search.cpan.org/perldoc?Catalyst::Controller::Resources) makes it easy to create a resource-oriented
+controller, but the actual mechanics of extending it with additional "verbs"
+is a little opaque.  This package provides a parameterized role designed to
+make adding additional verbs easy, as well as a number of concrete roles
+implementing additional common actions.
+
+# PARAMETERIZED ROLE
+
+See [Catalyst::ControllerRole::Resources::Verb](http://search.cpan.org/perldoc?Catalyst::ControllerRole::Resources::Verb) for details.
+
+# CONCRETE ROLES
+
+These implementations live under the
+Catalyst::ControllerRole::Resources::Verb::* namespace.
+
+## Count
+
+[Catalyst::ControllerRole::Resources::Verb::Count](http://search.cpan.org/perldoc?Catalyst::ControllerRole::Resources::Verb::Count) implements a COLLECTION
+action that is expected to return the collection count (whatever that means in
+the context you're using it).
+
+    path: count
+    args: none
+    method: GET
+
+# SEE ALSO
+
+[Catalyst::Controller::Resources](http://search.cpan.org/perldoc?Catalyst::Controller::Resources), [Catalyst::Controller::REST](http://search.cpan.org/perldoc?Catalyst::Controller::REST).
+
+# BUGS AND LIMITATIONS
+
+There are no known bugs in this module.
+
+Please report problems to Chris Weyl <cweyl@alumni.drew.edu>, or (preferred)
+to this package's RT tracker at
+<bug-Catalyst-ControllerRole-Resources-Verbs@rt.cpan.org>.
+
+Patches are welcome.
+
+# AUTHOR
+
+Chris Weyl <cweyl@alumni.drew.edu>
+
+
+
+# LICENSE AND COPYRIGHT
+
+Copyright (c) 2010 Chris Weyl <cweyl@alumni.drew.edu>
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the
+
+    Free Software Foundation, Inc.
+    59 Temple Place, Suite 330
+    Boston, MA  02111-1307  USA
